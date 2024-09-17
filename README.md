@@ -74,5 +74,8 @@ To ensure a fair process for handling complaints of student misconduct, with cle
 - A consistent and fair process for resolving student misconduct issues.
 - Proper documentation stored in student records for reference.
 
+## Image:
+![Student Rights Procedure](./images/Photo2.jpeg)
+
 ---
 
