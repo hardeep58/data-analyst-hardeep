@@ -42,7 +42,7 @@ The primary aim is to analyze voting patterns, participation rates, and decision
 - Automated ETL pipeline for continuous data processing and analysis.
 
 ## Image:
-![Council Voting Records](./jpeg/photo1.jpeg)
+![Council Voting Records](./images/Photo1.jpeg)
 
 ---
 
