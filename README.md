@@ -41,31 +41,38 @@ The primary aim is to analyze voting patterns, participation rates, and decision
 - Dashboards visualizing voting trends, participation rates, and decision-making patterns.
 - Automated ETL pipeline for continuous data processing and analysis.
 
+## Image:
+![Council Voting Records](./jpeg/photo1.jpeg)
+
 ---
 
-## Surviving the Titanic: An Exploratory Data Analysis
+# Student Rights and Responsibilities Procedure
+
 **Project Description:**  
-Perform an Exploratory Data Analysis (EDA) on the Titanic dataset to uncover patterns and insights related to passenger survival, analyzing various features such as age, gender, class, and fare.
+This document outlines the procedures to support the Student Rights and Responsibilities Policy at UCW, detailing how complaints and allegations of student misconduct are addressed.
 
-**Objective:**  
-Understand the factors that influenced survival during the Titanic disaster by performing statistical analysis and data visualizations.
+## Objective:  
+To ensure a fair process for handling complaints of student misconduct, with clear steps from complaint submission to resolution.
 
-**Dataset:**  
-- Passenger ID, Survived, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare, Embarked
+## Procedure Overview:  
+1. **Complaint Submission:**  
+   Complaints can be submitted by students, faculty, or staff, and are reviewed by the Student Rights & Responsibilities Advisor.
 
-**Methodology:**  
-- Data cleaning and preprocessing using Python (Pandas, NumPy)
-- Descriptive statistics
-- Visualizations (Histograms, Bar Charts, Heatmaps)
-- Survival analysis based on gender, class, and age group
+2. **Interim Measures:**  
+   Temporary actions like restricting campus access may be implemented if misconduct is deemed a risk.
 
-**Tools & Technologies:**  
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
-- Jupyter Notebook
+3. **Investigation Process:**  
+   If informal resolution fails, the advisor initiates an investigation to gather evidence and determine outcomes.
 
-**Deliverables:**  
-- Jupyter Notebook with analysis
-- Presentation summarizing key insights
+4. **Outcomes:**  
+   Sanctions range from warnings to expulsion, depending on the severity of the violation.
+
+## Tools & Technologies:  
+- UCW internal systems for managing complaints and documentation.
+
+## Deliverables:  
+- A consistent and fair process for resolving student misconduct issues.
+- Proper documentation stored in student records for reference.
 
 ---
 
