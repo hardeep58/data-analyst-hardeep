@@ -44,6 +44,82 @@ The primary aim is to analyze voting patterns, participation rates, and decision
 ## Image:
 ![Council Voting Records](./images/Photo1.jpeg)
 
+## Steps
+
+## Dataset Chosen for DAP Design and Implementation
+
+| Data Theme             | Dataset                   | Description                                                                 | Year         |
+|------------------------|---------------------------|-----------------------------------------------------------------------------|--------------|
+| Government and Finance | Council Voting Records     | The dataset contains individual Council member voting records for Vancouver  | 2023-2024    |
+
+### Dataset 3: Council Voting Records
+
+The dataset has 9 columns: Meeting Type, Vote Date, Voter Number, Agenda Description, Vote Start Date, Time, Vote Decision, and Vote Details ID.
+
+### Analysis Metric: 
+Comparison of the total votes cast and final decisions reached in both 2023 and 2024. This analysis evaluates voting trends and changes in participation, demonstrating policy shifts in council priorities.
+
+![Data Analytical Question](./images/1.png)
+
+### Step 1: Data Analytical Question Formulation
+
+#### Descriptive Analysis:
+-	What was the total rate of participation with votes in each type of the meeting during the last year?
+-	How many votes were there in the last month and last year?
+-	How has the voting outcome distribution changed over time?
+-	Who were the council members with the most votes cast in the last year?
+-	What is the trend in the number of votes cast over the last year, month and day?
+
+
+#### Diagnostic Analysis:
+- Why did some particular agenda items or type of meetings receive high and low votes?
+-	What contributed to the very high or low participation rates in some of the meetings?
+-	Were there some common issues or trends with agenda items which have been constantly rejected?
+-	Why are some council members more likely to vote in opposition or not vote at all?
+-	Why have some of the meetings or agenda items been skipped, or no recorded votes noted?
+
+
+#### Predictive Analysis:
+- How many votes will be cast at future meetings, based on historical trends?
+- What will the voting trend be over the coming year (Approved, Rejected)?
+- Which council members will be the most active or most influential in terms of future voting sessions?
+  
+
+#### Prescriptive Analysis:
+-	What changes can be made to increase the extent of voting participation and thereby make the decision-making process more balanced?
+-	How might the scheduling of meeting time or distribution of resources be optimized to deal most effectively with those agenda items that are highly important or complex? 
+-	What would recommendations for streamlining the voting process look like based on the performance history? 
+
+---
+
+## Step 2: Data Discovery
+
+### 1. Metric of Descriptive Analysis: Voting Participation Rate
+- **Metric:** Number of votes in a certain period.
+- **Description:** The dataset contains columns like vote date, voter number, and decision. From these columns, one can easily determine the number of votes taken for a particular meeting or any given period.
+- **Use Case:** This metric would be used to determine how much the council members participate while making decisions.
+
+### 2. Diagnostic Analysis Metric: Voting Decision Analysis
+- **Metric:** Computes the average number of votes for or against agenda items; analyzes voting behavior and patterns.
+- **Details:** Computes a ratio of Approved vs. Rejected Decisions for the Decision column. It may be performed to see how various Meeting Types or Agenda Descriptions affect the voting outcome.
+- **Use Case:** Helps diagnose reasons behind voting trends, like why certain agenda items always pass or fail, and identifies potential biases or areas of contention.
+
+### 3. Predictive Analysis Metric: Voting Outcome Forecasts
+- **Metric:** Forecast the likelihood of agenda items being Approved or Rejected based on historical voting data.
+- **Details:** Leverages past voting history to determine future outcomes for specific Agenda Descriptions, Meeting Types, or voting patterns for members of the council.
+- **Use Case:** Helps predict or forecast the council's position on future agenda items, allowing for better preparation and strategy development.
+
+### 4. Prescriptive Analysis Metric: Optimal Decision Making Time
+- **Metric:** Prescribes the ideal quantum of time that should be spent on discussion or the amount of resources to be allocated to an agenda item, based on past voting results and meeting efficiency.
+- **Details:** Ideal Resolution Time = (Total Duration of Meeting / Number of Agenda Items) * Suggested Adjustment Factor. This helps properly calibrate the agenda of the meeting for effective discussion.
+- **Use Case:** Helps optimize council meetings, ensuring enough time is allocated for better resolution, leading to overall efficiency and effectiveness.
+
+![Step 2](./images/Photo2.png)
+
+---
+
+### Step 3: Design for Storing Data
+
 
 
 ---
