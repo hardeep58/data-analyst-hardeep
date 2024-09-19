@@ -114,13 +114,42 @@ Comparison of the total votes cast and final decisions reached in both 2023 and 
 - **Details:** Ideal Resolution Time = (Total Duration of Meeting / Number of Agenda Items) * Suggested Adjustment Factor. This helps properly calibrate the agenda of the meeting for effective discussion.
 - **Use Case:** Helps optimize council meetings, ensuring enough time is allocated for better resolution, leading to overall efficiency and effectiveness.
 
-![Step 2](./images/Photo2.png)
+![Step 2](./images/2.png)
 
 ---
 
 ### Step 3: Design for Storing Data
 
+To effectively categorize and manage business licenses, data can be partitioned into separate Amazon S3 buckets, following a specific folder structure. Below is an example of how this could be set up:
 
+### Amazon S3 Bucket Structure:
+- **Bucket Name:** gov-and-finan-councilvotingrecords-hardeep
+  - **2024**
+    - Landing
+    - Raw
+    - Curated
+  - **2023**
+    - Landing
+    - Raw
+    - Curated
+
+This structure helps organize data efficiently for analysis and retrieval.
+
+![Step 3](./images/3.png)
+
+---
+
+### Step 4: Data Ingestion
+
+- This step involves the acquisition and organization of the required dataset to make it fit for analysis, obtained from the operational environment which is the City of Vancouver portal.
+  
+- Attention is on voting records for the City of Vancouver for the years 2023 and 2024, part of the City's commitment to open, transparent, and proactive disclosure of data. The data to be prepared will be for the year 2023, with 7032 rows, and another for 2024, with 3908 rows to be used in an analytical environment. 
+
+![Step 4](./images/4.png)
+
+- Information is pulled from the City of Vancouver portal and moved to an analytical environment for processing and analysis. In this example, using Amazon S3, the extracted Excel files for 2023 and 2024 will be uploaded into the landing zone of the S3 Bucket, making the data ready to analyze.
+
+![Step 4.1](./images/5.png)
 
 ---
 
