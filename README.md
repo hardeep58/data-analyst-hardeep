@@ -153,6 +153,93 @@ This structure helps organize data efficiently for analysis and retrieval.
 
 ---
 
+### Step 5: Data Storage
+
+- Save the incoming data in Amazon S3 bucket in an encrypted and organised manner and make sure that the solution for storage has querying and retrieval features.
+  
+- Store uploaded data in an Amazon S3 bucket securely and in an organized manner
+
+![Step 5](./images/6.png)
+
+---
+
+### Step 6: Information Pipeline Plan
+
+- Planned the Information Heredity Graph for understanding and overseeing the stream of information outlining the development of information through different stages of the pipeline, from source frameworks to target expository yield in draw.io instrument
+
+![Step 6.1](./images/7.png)
+![Step 6.2](./images/8.png)
+![Step 6.3](./images/9.png)
+![Step 6.4](./images/10.png)
+
+---
+
+### Step 7: Cleaning Data
+
+- Use the AWS Glue DataBrew service to simplify the process of cleaning, transforming, and analysing data by filling in missing values, detecting outliers, correcting data types, and removing duplicate data types
+- Transformation formulas are created and can be reused and shared using AWS Glue DataBrew
+
+![Step 7](./images/11.png)
+
+---
+
+### Step 8: Data Structuring
+
+- The AWS Glue DataBrew service is used to rename the column headers, making them more intimate and ensuring that each name clearly reflects the type of data it represents
+  
+- Additionally, the column data types  are adjusted to match the requirements of the specific model or tool being analysed
+
+- Once the data has been cleaned, a job is created in the project that contains the recipe  to clean all the data in the selected folder
+
+- The result of the cleaned data is stored as a “csv” file in the  raw folder
+  
+![Step 8](./images/12.png)
+
+---
+
+### Step 9: Implementing the data pipeline
+
+- The automated process ensures that raw data is transformed into a structured, analyzable format by using the AWS Glue service to extract, transform, and load (ETL) data from the raw folder stored in the S3 bucket (source) to the curated folder (target) of the S3 bucket. 
+
+- AWS Glue is used to automate the ETL process, extracting data from the raw folder in the S3 bucket, transforming it, and loading it into the curated folder, ensuring the data is structured and ready for analysis.
+
+![Step 9](./images/13.png)
+
+---
+
+### Step 10: Data Analysis
+
+- Using the Athena service, a database and tables for curated data were built. SQL queries were then run for the curated data table, which is downloaded as a ".csv" file for usage in data publishing and visualization.
+
+![Step 10](./images/14.png)
+
+---
+
+### Step 11: Data Visualization
+
+- The Excel file created from the "csv" file downloaded in step 11 is used to create a dashboard with the output and a graph based on the findings. After then, a PDF export of this Excel file is made. An index.html file with HTML code that shows the results saved in the PDF file is used to visualize the data. The Amazon QuickSight service can also be used for data visualization.
+
+- First the .csv file is converted to Excel, used to create a dashboard with outputs and graphs, and exported as a PDF. Data visualization is achieved via an index.html file calling the PDF, or through Amazon QuickSight for enhanced visualization.
+
+![Step 11](./images/15.png)
+
+--- 
+
+### Step 12: Data Publishing
+
+For data publishing, two instances are created for the web server and general server utilizing Amazon EC2 services. The data is published on a remote server using Remote Desktop Protocol (RDP) and Desktop Connection Software.
+
+The **web server** instance serves the purpose of sharing data with external bodies, making it available to the public or external stakeholders. On the other hand, the **general server** instance is intended for internal data sharing within the organization, allowing other departments and team members to access the data securely.
+
+This setup provides a proper way to handle and disseminate data efficiently to both internal and external audiences.
+
+In Step 12, two Amazon EC2 instances—a web server for external data sharing and a general server for internal access—are created. Data is published to the remote server via Remote Desktop Connection, ensuring secure distribution to both internal and external stakeholders.
+
+![Step 12](./images/16.png)
+
+---
+---
+
 # Student Rights and Responsibilities Procedure
 
 **Project Description:**  
